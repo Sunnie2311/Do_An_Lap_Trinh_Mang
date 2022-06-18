@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C5C2F358-D9E9-49CD-9C05-B8C0023E9A6D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Client_Side2</RootNamespace>
+    <AssemblyName>Client_Side2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CustomControl">
+      <HintPath>..\..\..\..\..\Desktop\CustomControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmConnect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConnect.Designer.cs">
+      <DependentUpon>frmConnect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegister.Designer.cs">
+      <DependentUpon>frmRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBackGround.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBackGround.Designer.cs">
+      <DependentUpon>frmBackGround.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreate.Designer.cs">
+      <DependentUpon>frmCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmJoin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJoin.Designer.cs">
+      <DependentUpon>frmJoin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOnline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOnline.Designer.cs">
+      <DependentUpon>frmOnline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWorkSpace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWorkSpace.Designer.cs">
+      <DependentUpon>frmWorkSpace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmResize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResize.Designer.cs">
+      <DependentUpon>frmResize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmConnect.resx">
+      <DependentUpon>frmConnect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBackGround.resx">
+      <DependentUpon>frmBackGround.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreate.resx">
+      <DependentUpon>frmCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJoin.resx">
+      <DependentUpon>frmJoin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOnline.resx">
+      <DependentUpon>frmOnline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegister.resx">
+      <DependentUpon>frmRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWorkSpace.resx">
+      <DependentUpon>frmWorkSpace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmResize.resx">
+      <DependentUpon>frmResize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include=".editorconfig" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pencil-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eraser-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Editing-Line-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elipse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paint_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rectangular-shape-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\floppy-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\painting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linex.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\line1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\line2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\line4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paint-bucket %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\full-screen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geometric-shapes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencil %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eraser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paint-bucket %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\figures.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\figures1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shapes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Curves.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rectangle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save %281%29.png" />
+    <None Include="Resources\pencil %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whiteboard %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dowload2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Phong_chu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Phong_chu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\garbage %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whiteboard %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redo %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redo %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencil %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eraser %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eraser %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paint-bucket %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\color-palette.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accept %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clean.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teal_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purple_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paintbrush.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paintbrush %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teal_color1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paintbrush %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resume %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
